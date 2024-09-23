@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthChain</title>
+    <link rel="icon" type="image/x-icon" href="./Favicon.ico">
+    <link rel="stylesheet" href="signin_styles.css">
+</head>
+<body class="hidden">
+    <!-- Header with Logo and Company Name -->
+    <header>
+        <div class="logo-container">
+            <img src="./CP_logo.png" alt="HealthChain Logo" class="logo">
+            <span class="company-name">HealthChain</span>
+        </div>
+    </header>
+    
+    <div class="container" id="container">
+        <!-- Sign Up Form -->
+        <div class="form-container sign-up-container">
+            <form id="SignUpForm">
+                <h2>Create Account</h2>
+                <input type="text" placeholder="Name" id="SignUpName" required>
+                <input type="email" placeholder="Email" id="SignUpEmail" required>
+                <input type="password" placeholder="Password" id="SignUpPassword" required>
+                <button type="submit" id="SignUpFormSubmit">SIGN UP</button>
+            </form>
+        </div>
+
+        <!-- Sign In Form -->
+        <div class="form-container sign-in-container">
+            <form id="SignInform">
+                <h2>Sign in to HealthChain</h2>
+                <p>Please login with your personal info</p><br>
+                <input type="email" placeholder="Email" id="SignInEmail" required>
+                <input type="password" placeholder="Password" id="SignInPassword" required>
+                <button type="submit" id="SignInFormSubmit">SIGN IN</button>
+            </form>
+        </div>
+
+        <!-- Overlay for Switching -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h2>Welcome Back!</h2>
+                    <p id="word-space">To keep connected with us please login with your personal info</p><br>
+                    <button class="ghost" id="signIn">SIGN IN</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h2>Hello, New Here?</h2>
+                    <p>Enter your details and start journey with us!</p><br>
+                    <button class="ghost" id="signUp">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="SignIn_Script.js"></script>
+    <script type="module" src="Firebase_Config.js" defer></script>
+    <script src="SignUp&SignIn.js"></script>
+</body>
+</html>

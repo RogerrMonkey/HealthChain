@@ -1,0 +1,90 @@
+.logo-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.hero {
+    background-image: url(./hands.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 91.5vh;
+    color: beige;
+}
+
+#logo-name1 {
+    font-weight: bolder;
+    background: linear-gradient(to right, #266CA9, black);
+    background-clip: text;
+    color: transparent;
+}
+
+#SF {  
+    background-color: #0f52ba;         
+    color: whitesmoke;
+}
+
+#SF:hover {
+  background-color: #062657;
+}
+
+.feature-icon {
+  background-color: #4682b4;
+  width: 4rem;
+  height: 4rem;
+  border-radius: .75rem;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }                   
+}
+
+.animation1 {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+.image {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); 
+} 
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.feature:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.feature:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.feature:nth-child(4) {
+  transition-delay: 600ms;
+}
+
+.about-us-cont {
+  transition-duration: 2s;
+}
